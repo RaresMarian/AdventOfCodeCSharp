@@ -5,9 +5,9 @@ public class Day01Tests
     private readonly ITestOutputHelper _output;
     public Day01Tests(ITestOutputHelper output) => _output = output;
 
-    [Fact] public void Step1WithExample() => new Day01Solver().ExecuteExample1("36554");
+    [Fact] public void Step1WithExample() => new Day01Solver().ExecuteExample1("??");
 
-    [Fact] public void Step2WithExample() => new Day01Solver().ExecuteExample2("36554");
+    [Fact] public void Step2WithExample() => new Day01Solver().ExecuteExample2("??");
 
     [Fact] public void Step1WithPuzzleInput() => _output.WriteLine(new Day01Solver().ExecutePuzzle1());
         
