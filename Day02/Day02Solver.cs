@@ -21,13 +21,14 @@ public class Day02Solver : SolverBase
 
     protected override void Parse(List<string> data)  
     {
+        
         _reports = data
         .Where(line => !string.IsNullOrWhiteSpace(line)) // ignora righe vuote
         .Select(line => line.Split(' ', StringSplitOptions.RemoveEmptyEntries) // rimuove stringhe vuote
                             .Select(int.Parse)
                             .ToList())
         .ToList();
-        
+      
 
 
 
